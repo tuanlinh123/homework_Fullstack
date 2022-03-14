@@ -1,7 +1,7 @@
 # Ex1
 ```
 const fs = require('fs');
-let data = ''
+let data = `1 8 5 7 2`
 fs.writeFile('numbers.txt',data,{encoding:'utf8'},(err)=>{
     if (err){
         console.log(err);
