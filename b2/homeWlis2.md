@@ -1,6 +1,7 @@
 # Ex1
+```
 const fs = require('fs');
-let data = ''
+let data = `1 8 5 7 2`
 fs.writeFile('numbers.txt',data,{encoding:'utf8'},(err)=>{
     if (err){
         console.log(err);
@@ -9,8 +10,9 @@ fs.writeFile('numbers.txt',data,{encoding:'utf8'},(err)=>{
     }
     
 })
-
+```
 # Ex2
+```
 const writeFile = (path, data) => {
     return new Promise((resolve, reject) => {
        fs.writeFile(path, JSON.stringify(data), {encoding: 'utf-8'}, (err) => {
